@@ -1,0 +1,55 @@
+.toolbar{
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    height: 56px;
+    margin-left: 0.5rem;
+    /* top: 0; */
+    /* left: 0; */
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); */
+}
+
+.toolbar__navigation{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.toolbar__logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.spacer{
+    flex: 1;
+}
+
+.toolbar__navigation_items a {
+    color: white;
+    text-decoration: none;
+}
+.toolbar__navigation_items ul {
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+.toolbar__navigation_items li {
+    padding: 0.5rem;
+}
+
+/* Meaning anything below 768px */
+@media (max-width: 768px){
+    .toolbar__navigation_items{
+        display: none;
+    }
+}
+@media (min-width: 769px){
+    .toolbar__toggle-button{
+        display: none;
+    }
+}
