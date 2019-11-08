@@ -3,33 +3,101 @@
     position: fixed;
     background-color: transparent;
     height: 56px;
-    margin-left: 0.5rem;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    /* margin-left: 0.5rem; */
     /* top: 0; */
     /* left: 0; */
     /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); */
+
+    
+    /* Flexbox stuff */
+}
+.toolbar__logo{
+    /* border: 1px solid red; */
+    /* padding-top: 15px; */
+    /* font-size: 40px; */
+    font-weight: 700;
+    /* font-family: 'Josefin Sans', cursive; */
+    font-family: 'Eagle Lake', cursive;
+}
+.k-letter{
+    font-family: 'Eagle Lake', cursive;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .toolbar__navigation{
     display: flex;
     align-items: center;
     height: 100%;
+    width: 70%;
+    /* border: 1px solid green; */
 }
 
 .toolbar__logo a{
     color: white;
     text-decoration: none;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 30px;
 }
 
 .spacer{
     flex: 1;
+    /* border: 1px solid yellow; */
 }
 
 .toolbar__navigation_items a {
     color: white;
     text-decoration: none;
 }
+
+/* .nav-ul li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+} */
+.nav-ul li a {
+    display: block;
+    padding: 1px .3em 1px;
+    text-decoration: none;
+    background: linear-gradient(to left, white, white) no-repeat bottom center;
+    background-size: 0% 3px;
+    /* will not show */
+    transition: 0.25s;
+  }
+  .nav-ul li a:hover {
+    background-size: 100% 3px;
+    /* will expand whole width */
+  }
+
+  .nav-ul li:last-of-type a {
+    background-position: bottom right;
+  }
+  
+
+/* .nav-ul li:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+} */
+
 .toolbar__navigation_items ul {
     color: white;
     margin: 0;
@@ -42,12 +110,29 @@
     padding: 0.5rem;
 }
 
+.nav-links{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', cursive;
+}
+
 /* Meaning anything below 768px */
 @media (max-width: 768px){
     .toolbar__navigation_items{
         display: none;
     }
+    .toolbar__logo{
+        margin: 0 auto;
+    }
+    .toolbar__navigation{
+        width: 90%;
+    }
+    .spacer{
+        display: none;
+    }
 }
+
 @media (min-width: 769px){
     .toolbar__toggle-button{
         display: none;

@@ -3,7 +3,7 @@
    width: 100vw;
    height: 100vh;
    /* border: 1px solid red; */
-   
+   font-family: 'Josefin Sans', cursive;
    /* Flexbox stuff */
    display: flex;
    flex-direction: column;
@@ -38,6 +38,7 @@
 
 .hero p {
     /* border: 1px solid red; */
+    color: white;
 }
 
 /* Media Queries */

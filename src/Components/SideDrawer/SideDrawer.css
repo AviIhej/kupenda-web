@@ -29,15 +29,17 @@
 }
 
 .side-drawer a{
-    color: purple;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', cursive;
+    color: black;
 }
 
 
 .side-drawer a:hover,
 .side-drawer a:active  {
-    color: green;
+    color: purple;
 }
 
 @media (min-width: 769px){

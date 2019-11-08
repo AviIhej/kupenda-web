@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import mockup from '../../assets/phone-mockup.png';
 import playStore from '../../assets/playStore.png';
+// import appleStore from '../../assets/appleStorepng.png';
 import './Hero1.css';
 
 class Hero extends Component{
@@ -8,17 +9,20 @@ class Hero extends Component{
         return (
           <section className="hero">
             <div className="hero-inner">
-                <h1>Find the people you’ve crossed paths with</h1>
+                <h1>Use the power of the crowd to win the dating game</h1>
                 <main>
-                <p>
-                When walking down the street, sitting at a bar, 
-                at work, or during a night out… We’ve all had that 
-                experience of making eye contact with someone who 
-                leaves a lasting impression. Now with happn, you 
-                can find the people you cross paths with, 
-                and seize the opportunity!
+                  <p>Get quality matches created through crowdsourcing.</p>
+                <p style={{color: 'white', fontSize: '16px'}}>
+                Match other singles together and light the spark of new relationships.
+                It’s frustrating to spend hours swiping 
+                in dating apps and matching with lame people.
+                Swiping wastes time and makes dating feel like a 
+                second job. Kupenda helps you save time, 
+                have great dates and pay it forward.
+
                 </p>
                 <img src={playStore} style={{width: '200px', height: 'auto'}} alt="playStore"/>
+                {/* <img src={appleStore} style={{width: '200px', height: 'auto'}} alt="appleStore"/> */}
                 </main>
             </div>
           </section>
