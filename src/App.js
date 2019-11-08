@@ -13,8 +13,24 @@ class App extends Component {
 constructor(props){
   super(props);
   this.state={
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
+    scrolled: false,
   };
+}
+
+componentDidMount() {
+  window.addEventListener('scroll', () => {
+    const isTop = window.scrollY < 230
+    if(isTop !== true){
+      this.setState({scrolled: true})
+    }else{
+      this.setState({scrolled: false})
+    }
+  })
+}
+
+componentWillUnmount(){
+  window.removeEventListener('scroll');
 }
 
 drawerToggleClickHandler = () => {
@@ -40,10 +56,11 @@ render(){
     return (
       <div style={{height: '100%'}}>
         {/* <Navigation /> */}
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} scrolled={this.state.scrolled}/>
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <Hero />
+        <Hero scrolled={this.state.scrolled} />
+        {/* <div style={{height: '1000px'}}>Hello</div> */}
         {/* <SectionOne />  */}
         {/* <Footer /> */}
       </div>

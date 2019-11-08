@@ -5,10 +5,18 @@ import playStore from '../../assets/playStore.png';
 import './Hero1.css';
 
 class Hero extends Component{
+  
     render(){
+    //Disappearing Elements 
+    let scrollClassesHeroDiv = ['hero-inner']
+
+    //Disappearing Elements 
+    if(this.props.scrolled){
+        scrollClassesHeroDiv = ['hero-inner scrolled']
+    }
         return (
           <section className="hero">
-            <div className="hero-inner">
+            <div className={scrollClassesHeroDiv}>
                 <h1>Use the power of the crowd to win the dating game</h1>
                 <main>
                   <p>Get quality matches created through crowdsourcing.</p>

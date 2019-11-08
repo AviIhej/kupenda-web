@@ -20,3 +20,13 @@
     height: 2px;
     background-color: white;
 }
+
+.toggle-button__line.scrolled {
+    background-color: black;
+    
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}

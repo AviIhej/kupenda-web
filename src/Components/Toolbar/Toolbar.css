@@ -3,13 +3,15 @@
     position: fixed;
     background-color: transparent;
     height: 56px;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    z-index: 200;
+    /* transition: transform 0.2s ease-in-out ; */
 
     /* margin-left: 0.5rem; */
     /* top: 0; */
@@ -19,6 +21,18 @@
 
     
     /* Flexbox stuff */
+}
+
+.toolbar.scrolled {
+    background-color: #FFF;
+    
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+
+    border-bottom: 1px solid grey;
 }
 .toolbar__logo{
     /* border: 1px solid red; */
@@ -48,6 +62,15 @@
     /* font-size: 2rem; */
     font-size: 30px;
 }
+.toolbar__logo.scrolled a{
+    color: #1b86b3;
+    -webkit-transition: color 400ms linear;
+    -moz-transition: color 400ms linear;
+    -o-transition: color 400ms linear;
+    -ms-transition: bolor 400ms linear;
+    transition: color 400ms linear;
+}
+
 
 .spacer{
     flex: 1;
@@ -57,6 +80,14 @@
 .toolbar__navigation_items a {
     color: white;
     text-decoration: none;
+}
+.toolbar__navigation_items.scrolled a {
+    color: #1b86b3;
+    -webkit-transition: color 400ms linear;
+    -moz-transition: color 400ms linear;
+    -o-transition: color 400ms linear;
+    -ms-transition: bolor 400ms linear;
+    transition: color 400ms linear;
 }
 
 /* .nav-ul li:before {
