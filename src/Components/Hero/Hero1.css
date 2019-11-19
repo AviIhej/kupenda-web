@@ -15,7 +15,11 @@
    color: white;
    
    /* Background styles */
-   background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../../bg-home.jpg');
+   /* background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../../bg-home.jpg'); */
+   /* background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1552658687-d0e64645ac79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('https://www.builderiq.net/wp-content/uploads/2016/04/iStock_000053121596_Medium.jpg');
+   /* background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/948873/pexels-photo-948873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+   /* background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1520719627573-5e2c1a6610f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'); */
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
@@ -38,8 +42,14 @@
 
 .hero-inner.scrolled{
     /* visibility: unset; */
-    opacity: 0.4;
+    opacity: 0;
     transition:  opacity .3s linear;
+}
+
+.hero-inner.scrolledUp{
+    /* visibility: unset; */
+    opacity: 1;
+    transition:  opacity .3s ease-in-out;
 }
 
 .hero p {

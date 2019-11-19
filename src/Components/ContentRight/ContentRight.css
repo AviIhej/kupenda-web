@@ -1,0 +1,32 @@
+.content-right-container{
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.content1Right{
+    order: 2;
+    /* border: 1px solid red; */
+}
+.content2Right{
+    order: 1;
+    /* border: 1px solid red; */
+}
+
+@media(max-width: 800px){
+    .content-right-container{
+        flex-direction: column;
+    }
+    .content1Right{
+        order: 1;
+        /* border: 1px solid red; */
+    }
+    .content2Right{
+        order: 2;
+        /* border: 1px solid red; */
+    }
+    
+}

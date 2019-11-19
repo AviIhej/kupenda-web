@@ -5,22 +5,59 @@ import playStore from '../../assets/playStore.png';
 import './Hero1.css';
 
 class Hero extends Component{
+
+  constructor(props){
+    super(props);
+    this.state={
+      scrolled: false,
+      scrolledHero: false
+    };
+  }
+  
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      // For Toolbar
+      const isTop = window.scrollY < 500
+      const isTopHero = window.scrollY < 150
+  
+      if(isTop !== true){
+        this.setState({scrolled: true})
+      }else if(isTop === true){
+        this.setState({scrolled: false})
+      }
+      // For Hero
+      if(isTopHero !== true){
+        this.setState({scrolledHero: true})
+      }else if(isTopHero === true){
+        this.setState({scrolledHero: false})
+      }
+    })
+  }
+  
+  componentWillUnmount(){
+    window.removeEventListener('scroll', null);
+  }
   
     render(){
     //Disappearing Elements 
     let scrollClassesHeroDiv = ['hero-inner']
 
     //Disappearing Elements 
-    if(this.props.scrolled){
+    if(this.state.scrolledHero){
         scrollClassesHeroDiv = ['hero-inner scrolled']
+    }else{
+      scrollClassesHeroDiv=['hero-inner scrolledUp']
     }
         return (
           <section className="hero">
             <div className={scrollClassesHeroDiv}>
-                <h1>Use the power of the crowd to win the dating game</h1>
+                {/* <h1>Use the power of the crowd to win the dating game</h1> */}
+                {/* <h1>Powerful alone. Better Together</h1> */}
+                <h1>Powerful alone. Better Together</h1>
+                <h2>Have other people find you matches, and you dont lift a finger</h2>
                 <main>
-                  <p>Get quality matches created through crowdsourcing.</p>
-                <p style={{color: 'white', fontSize: '16px'}}>
+                  {/* <p>Get quality matches created through crowdsourcing.</p> */}
+                {/* <p style={{color: 'white', fontSize: '16px'}}>
                 Match other singles together and light the spark of new relationships.
                 It’s frustrating to spend hours swiping 
                 in dating apps and matching with lame people.
@@ -28,7 +65,7 @@ class Hero extends Component{
                 second job. Kupenda helps you save time, 
                 have great dates and pay it forward.
 
-                </p>
+                </p> */}
                 <img src={playStore} style={{width: '200px', height: 'auto'}} alt="playStore"/>
                 {/* <img src={appleStore} style={{width: '200px', height: 'auto'}} alt="appleStore"/> */}
                 </main>

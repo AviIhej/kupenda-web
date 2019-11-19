@@ -1,26 +1,64 @@
 .footer{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: auto;
+    /* background-color: pink; */
+    margin: 0 auto;
     margin-top: 30px;
-    width: 100%;
-    background-color: #fb8e7f;
-    height: 125px;
-    /* margin-top: 30px; */
+    /* bordeR: 1px solid red; */
 }
-.footer-ul{
-    margin: 0px 91px;
-    padding: 40px 0px;
-    /* border: 3px solid purple; */
+
+/* UL Wrapper */
+.footer_ul_rapper{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
 }
-ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 12px 20px 0px 0px;
-    color: white;
+
+.footer_ul_rapper ul {
+    display: flex;
+    padding: 1px .3em 1px;
+}
+
+.footer_ul_rapper ul li{
+    padding: 10px;
     font-size: 14px;
+    list-style-type: none;
+    cursor: pointer;
 }
 
+.social_icons{
+    /* border: 4px solid purple */
+}
 
-@media screen and (max-width: 768px) {
-    .footer{
-        margin-top: -50px;
-    }
-  }
+.social_icons li{
+   text-decoration: none;
+}
+
+.twitter{
+    width: 24px;
+    height: 24px;
+    background-image: url(https://image.flaticon.com/icons/svg/466/466963.svg);
+}
+.instagram{
+    width: 24px;
+    height: 24px;
+    background-image: url(https://image.flaticon.com/icons/svg/466/466950.svg);
+}
+
+/* UL Wrapper 2 */
+.footer_ul_rapper_2{    
+    /* border: 9px solid green; */
+    padding-bottom: 30px;
+}
+
+.footer_ul_rapper_2 ul{
+    display: flex;
+    padding: 1px .3em 1px;
+}
+.footer_ul_rapper_2 ul li{
+    padding: 5px;
+    font-size: 12px;
+    list-style-type: none;
+    cursor: pointer;
+}

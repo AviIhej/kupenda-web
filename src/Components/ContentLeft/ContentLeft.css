@@ -1,0 +1,79 @@
+.content-container{
+    display: flex;
+    align-items: center;
+    padding-top: 00px;
+    /* height: 100%; */
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    /* border: 1px solid green; */
+}
+
+.blue-heading{
+    color: #59a6f1;
+    font-size: 20px;
+}
+
+.black-parg{
+    color: black;
+    font-size: 2.2vw;
+}
+
+.iphoneX{
+    width: 358px;
+    height: 600px; 
+}
+
+.content1{
+    order: 1;
+    /* border: 1px solid red; */
+}
+.content2{
+    order: 2;
+    /* border: 1px solid red; */
+}
+.parallaxBG{
+    /* border: 1px solid red; */
+}
+
+/* Min Width  Everything greater than 800px */
+@media(min-width: 800px){
+
+}
+
+/* Max-width: everything smaller than 800px */
+@media(max-width: 900px){
+    .content-container{
+        flex-direction: column;
+        display: hidden;
+    }
+    .content1{
+        /* order: 2; */
+        width: 80vw;
+        /* border: 1px solid red; */
+    }
+    .content2{
+        /* order: 1; */
+        /* border: 1px solid red; */
+    }
+
+    .iphoneX{
+        width: 258px;
+        height: 400px; 
+    }
+
+    /* .blue-heading{
+        color: #59a6f1;
+        font-size: 15px;
+    }
+
+    .black-parg{
+        color: black;
+        font-size: 20px;
+    }
+
+    .black-parg-2{
+        color: black;
+        font-size: 14px;
+    } */
+}

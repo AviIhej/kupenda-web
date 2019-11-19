@@ -1,5 +1,6 @@
 import React from 'react';
 import  DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
+import { Link } from 'react-router-dom';
 import './Toolbar.css';
 
 const Toolbar = (props) => {
@@ -11,12 +12,20 @@ const Toolbar = (props) => {
     // Changes Various Element Colors
     if(props.scrolled){
         scrollClassesBG = ['toolbar scrolled']
+    }else{
+        scrollClassesBG =['toolbar scrolledUp']
     }
+
     if(props.scrolled){
         scrollClassesLogo = ['toolbar__logo scrolled']
+    }else{
+        scrollClassesLogo =['toolbar__logo scrolledUp']
     }
+    
     if(props.scrolled){
         scrollClassesLinks = ['toolbar__navigation_items scrolled']
+    }else{
+        scrollClassesLinks =['toolbar__navigation_items scrolledUp']
     }
 
     return(
@@ -30,7 +39,7 @@ const Toolbar = (props) => {
                 <div className="spacer"></div>
                 <div className={scrollClassesLinks}>
                     <ul className="nav-ul">
-                        <li><a className="nav-links" href="/">Mission</a></li>
+                        <Link to={'/mission'}><li><a className="nav-links" href="/">Mission</a></li></Link>
                         <li><a className="nav-links" href="/">Daters</a></li>
                         {/* <li><a className="nav-links" href="/">The App</a></li> */}
                         <li><a className="nav-links" href="/">Match Makers</a></li>

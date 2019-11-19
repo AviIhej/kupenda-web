@@ -1,0 +1,32 @@
+.main_wrapper{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', cursive;
+}
+.col_wrapper{
+    
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.grid_item{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 500px;
+    display: flex;
+    margin-right: 40px;
+}
+
+@media(max-width: 800px){
+    .col_wrapper{
+        flex-direction: column;
+    }
+}

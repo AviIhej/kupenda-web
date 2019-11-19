@@ -28,19 +28,23 @@
     margin: .5rem 0;
 }
 
-.side-drawer a{
+.drawer_links{
     text-decoration: none;
     font-size: 40px;
     font-weight: 700;
     font-family: 'Josefin Sans', cursive;
     color: black;
+    text-decoration: none;
 }
 
-
-.side-drawer a:hover,
-.side-drawer a:active  {
+.drawer_links:hover{
     color: purple;
 }
+
+/* .drawer_links a:hover,
+.drawer_links a:active  {
+    color: purple;
+} */
 
 @media (min-width: 769px){
     .side-drawer{
