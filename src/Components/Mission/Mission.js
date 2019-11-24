@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Mission.css'
 import HeroGeneric from '../HeroGeneric/HeroGeneric';
 import Phone from '../Phone/Phone';
-import { Parallax } from 'react-scroll-parallax';
 
 class Mission extends Component{
     render(){

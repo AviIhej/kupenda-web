@@ -7,7 +7,7 @@ const FourGrid = () => {
         <div className="main_wrapper">
             <div className="col_wrapper">
                 <div className="grid_item">
-                    <img src="https://www.happn.com/public/images/home/commitment/home-commitment-1.png" style={{height: '77px', width: "77px"}}/>
+                    <img alt="features" src="https://www.happn.com/public/images/home/commitment/home-commitment-1.png" style={{height: '77px', width: "77px"}}/>
                     <div>
                         <h4>We promise, no one will bother you!</h4>
                         <p>
@@ -17,7 +17,7 @@ const FourGrid = () => {
                     </div>
                 </div>
                 <div className="grid_item">
-                <img src="https://www.happn.com/public/images/home/commitment/home-commitment-2.png" style={{height: '77px', width: "77px"}}/>
+                <img alt="features" src="https://www.happn.com/public/images/home/commitment/home-commitment-2.png" style={{height: '77px', width: "77px"}}/>
                     <div>
                         <h4>We guarantee the privacy of your data</h4>
                         <p>
@@ -29,7 +29,7 @@ const FourGrid = () => {
             </div>
             <div className="col_wrapper">
                 <div className="grid_item">
-                <img clasName="grid_img" src="https://www.happn.com/public/images/home/commitment/home-commitment-3.png" style={{height: '77px', width: "77px"}}/>
+                <img alt="features" clasName="grid_img" src="https://www.happn.com/public/images/home/commitment/home-commitment-3.png" style={{height: '77px', width: "77px"}}/>
                     <div>
                         <h4>Your opinion matters!</h4>
                         <p>
@@ -39,7 +39,7 @@ const FourGrid = () => {
                     </div>
                 </div>
                 <div className="grid_item">
-                <img src="https://www.happn.com/public/images/home/commitment/home-commitment-4.png" style={{height: '77px', width: "77px"}}/>
+                <img alt="features" src="https://www.happn.com/public/images/home/commitment/home-commitment-4.png" style={{height: '77px', width: "77px"}}/>
                     <div>
                         <h4>Report inappropriate profiles</h4>
                         <p>

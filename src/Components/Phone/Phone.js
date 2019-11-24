@@ -1,5 +1,4 @@
 import React from 'react';
-import backVideo from '../../assets/backVideo.mp4';
 import './Phone.css';
 
 const Phone = () => {

@@ -12,7 +12,7 @@ const SideDrawer = (props) => {
     return(
         <nav className={drawerClasses}>
             <ul>
-                <Link to={"/mission"} style={{textDecoration: 'none'}} to={'/mission'}><li className="drawer_links">Mission</li></Link>
+                <Link to={"/mission"} style={{textDecoration: 'none'}}><li className="drawer_links">Mission</li></Link>
                 <Link style={{textDecoration: 'none'}} to={'/daters'}><li className="drawer_links">Daters</li></Link>
                 <Link style={{textDecoration: 'none'}} to={'/matchmakers'}><li className="drawer_links">Match Makers</li></Link>
                 <Link style={{textDecoration: 'none'}} to={'/about'}><li className="drawer_links">About</li></Link>

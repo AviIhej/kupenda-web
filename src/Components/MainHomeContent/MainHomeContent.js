@@ -17,7 +17,7 @@ const MainHomeContent = () => {
         </div>
         <div style={{transform: "translate(50%,-25%)", position: 'absolute', top: '0', right: '0', zIndex: '-1'}}>
             <Parallax className="parallaxBG" x={[120, -50]} tagOuter="figure">
-                <img src={anim} style={{width: '380', height: '666'}} alt="phone"/>
+                <img alt="phone" src={anim} style={{width: '380', height: '666'}} />
             </Parallax>
         </div>
      
@@ -27,7 +27,7 @@ const MainHomeContent = () => {
         <Form />
       </Parallax>
      <FourGrid />
-     <img clasName="grid_img" src={img} style={{height: '322px', width: "100%", marginBottom: "40px", marginTop: "40px"}}/>
+     <img alt="grid" clasName="grid_img" src={img} style={{height: '322px', width: "100%", marginBottom: "40px", marginTop: "40px"}}/>
      {/* <ContentLeft /> */}
     </div>
   );

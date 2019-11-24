@@ -1,6 +1,5 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import iPhone6 from '../../assets/iphone6gold.png';
 import Phone from '../Phone/Phone';
 // import anim from '../../assets/anim.png';
 import './ContentRight.css';
